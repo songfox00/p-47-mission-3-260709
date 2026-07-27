@@ -1,4 +1,4 @@
-package com.ll.wiseSaying;
+package com.ll;
 
 public class Main {
     static void main(String[] args) {
