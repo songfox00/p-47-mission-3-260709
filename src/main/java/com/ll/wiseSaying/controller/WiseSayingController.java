@@ -23,10 +23,10 @@ public class WiseSayingController {
     }
 
     public void actionWrite(){
-        System.out.print("명언: ");
+        System.out.print("명언 : ");
         String content = sc.nextLine();
 
-        System.out.print("작가: ");
+        System.out.print("작가 : ");
         String author = sc.nextLine();
 
         WiseSaying wiseSaying = wiseSayingService.write(content, author);

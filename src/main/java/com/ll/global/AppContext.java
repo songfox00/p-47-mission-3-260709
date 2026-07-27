@@ -12,4 +12,15 @@ public class AppContext {
     public static WiseSayingRepository wiseSayingRepository = new WiseSayingRepository();
     public static WiseSayingService wiseSayingService = new WiseSayingService();
     public static WiseSayingController wiseSayingController = new WiseSayingController();
+
+    public static void init(Scanner _sc){
+        AppContext.sc = _sc;
+        AppContext.wiseSayingRepository = new WiseSayingRepository();
+        AppContext.wiseSayingService = new WiseSayingService();
+        AppContext.wiseSayingController = new WiseSayingController();
+    }
+
+    public static void init() {
+        init(new Scanner(System.in));
+    }
 }

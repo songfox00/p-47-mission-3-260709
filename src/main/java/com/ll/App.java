@@ -7,9 +7,13 @@ import java.util.Scanner;
 
 public class App {
 
-    Scanner sc = new Scanner(System.in);
+    Scanner sc;
     String cmd = "";
     WiseSayingController wiseSayingController = AppContext.wiseSayingController;
+
+    public App(){
+        this.sc =AppContext.sc;
+    }
 
     public void run(){
         System.out.println("== 명언 앱 ==");
